@@ -14,12 +14,12 @@ naam = input("Hoi wat is jou naam?" + "\n" + "Mijn naam is: ")
 #if any(char.isdigit() for char in naam):
 #    print("Gebruik geen nummers in je naam alsjeblieft.")
 #else: 
-raw_geboortejaar = input("In welk jaar ben je geboren?" + "\n" + "Ik ben geboren in: ")
+raw_geboortejaar = input("In welk jaar ben je geboren "  + naam + "?\n" + "Ik ben geboren in: ")
 #Dit veranderd de string input naar een integer
 geboortejaar = int(raw_geboortejaar)
 #Hier reken ik de leeftijd uit door het huidigejaar - het geboortejaar te doen. En de waarde daarvan verander ik weer terug, naar een string.
 leeftijd = str(huidigeJaar - geboortejaar)
-print("Beste " + naam + ", jou leeftijd is nu " + leeftijd)
+print("Beste " + naam + ", jou leeftijd is nu " + leeftijd + " jaar.")
 #Reken venusLeeftijd uit door de leeftijd in een int te veranderen
 #Aarde heeft 365 dagen in een jaar en Venus heeft 225 dagen in een jaar, dus is het 62% sneller. Vandaar gebruikt is de berekening leeftijd * 1.62
 leeftijd = int(leeftijd)
